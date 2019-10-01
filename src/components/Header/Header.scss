@@ -13,17 +13,17 @@
     position: relative;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
-.logo {
-    height: 35px;
+.header__logo {
+    height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -36,18 +36,18 @@
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     /* This will make any element which id BEHIND to be hidden while the animation takes place */
     backface-visibility: hidden;
 
 }
 
-.heading-primary-main {
+.heading-primary--main {
     /* The display set to block will take the intire width  */
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 800;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     /* In order for animation to work you have to set the animation-name in the HTML element  */
     animation-name: moveInLeft; 
     /* This is how much you want the animation to last */
@@ -63,11 +63,11 @@
 
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.5px;
+    letter-spacing: 1.75rem;
     /* THIS IS SHORTCUT TO PUT A FEW ANIMATIONI FUNCTION TOGUETHER */
     animation: moveInRigth 5s ease-out; 
     /* How long the animation will take before starting */
@@ -86,12 +86,12 @@
         /* If the opacity is set to zero the animation will NOT APPEAR */
         opacity: 0;
         /* This is to move the animation. This sets WHERE you want to begin your animation in the X axis */
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
     }
     /* This will happens when the animation is at its 80% of its time duration */
     80% {
         /* This is WHERE you want your animation to be at 80% of its life time */
-        transform: translateX(10px)
+        transform: translateX(1rem)
     }
     /* This the end of the animation. */
     100% {
@@ -108,17 +108,17 @@
         /* If the opacity is set to zero the animation will NOT APPEAR */
         opacity: 0;
         /* This sets WHERE you want to begin your animation */
-        transform: translateX(100px)
+        transform: translateX(10rem)
     }
     /* This will happens when the animation is at its 80% of its time duration */
     80% {
         /* This is WHERE you want your animation to be at 80% of its life time */
-        transform: translateX(-10px)
+        transform: translateX(-1rem)
     }
     /* This the end of the animation. */
     100% {
         opacity: 1;
-        transform: translateX(0px)
+        transform: translateX(0rem)
     }
 }
 
@@ -129,12 +129,12 @@
         /* If the opacity is set to zero the animation will NOT APPEAR */
         opacity: 0;
         /* This sets WHERE you want to begin your animation */
-        transform: translateY(50px)
+        transform: translateY(5rem)
     }
     /* This the end of the animation. */
     100% {
         opacity: 1;
-        transform: translateY(0px)
+        transform: translateY(0rem)
     }
 }
 
@@ -147,7 +147,7 @@
     padding: 15px 40px;
     /* Sets the display WITHOUT taking the intire width and put other elements on its side */
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     /* Sets that all the properties of this element and STATE can BE animated */
     transition: all .2s;
     position: relative;
@@ -156,17 +156,17 @@
 }
 
 .btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    transform: translateY(-.5rem);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
 }
 
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
@@ -176,7 +176,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +184,7 @@
     transition: all 1s;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
@@ -193,7 +193,7 @@
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom 5s ease-out .75s;
     /* animation-delay: .75s */
     animation-fill-mode: backwards;
