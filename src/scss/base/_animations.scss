@@ -1,0 +1,58 @@
+/* THIS IS HOW YOU CREATE ANIMATIONS */
+@keyframes moveInLeft {
+    /* At 0% is when the animation is starting and you can choose a lot of things */
+    0% {
+      /* If the opacity is set to zero the animation will NOT APPEAR */
+      opacity: 0;
+      /* This is to move the animation. This sets WHERE you want to begin your animation in the X axis */
+      transform: translateX(-10rem);
+    }
+    /* This will happens when the animation is at its 80% of its time duration */
+    80% {
+      /* This is WHERE you want your animation to be at 80% of its life time */
+      transform: translateX(1rem);
+    }
+    /* This the end of the animation. */
+    100% {
+      opacity: 1;
+      /* The ROTATE function is make you element rotate as many degres as you want */
+      transform: translateX(0px) rotate(360deg);
+    }
+  }
+  
+  /* THIS IS HOW YOU CREATE ANIMATIONS */
+  @keyframes moveInRigth {
+    /* At 0% is when the animation is starting and you can choose a lot of things */
+    0% {
+      /* If the opacity is set to zero the animation will NOT APPEAR */
+      opacity: 0;
+      /* This sets WHERE you want to begin your animation */
+      transform: translateX(10rem);
+    }
+    /* This will happens when the animation is at its 80% of its time duration */
+    80% {
+      /* This is WHERE you want your animation to be at 80% of its life time */
+      transform: translateX(-1rem);
+    }
+    /* This the end of the animation. */
+    100% {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
+  
+  /* THIS IS HOW YOU CREATE ANIMATIONS */
+  @keyframes moveInBottom {
+    /* At 0% is when the animation is starting and you can choose a lot of things */
+    0% {
+      /* If the opacity is set to zero the animation will NOT APPEAR */
+      opacity: 0;
+      /* This sets WHERE you want to begin your animation */
+      transform: translateY(5rem);
+    }
+    /* This the end of the animation. */
+    100% {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }

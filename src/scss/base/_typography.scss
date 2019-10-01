@@ -1,0 +1,42 @@
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  /* This will make any element which id BEHIND to be hidden while the animation takes place */
+  backface-visibility: hidden;
+
+  &--main {
+    /* The display set to block will take the intire width  */
+    display: block;
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 3.5rem;
+    /* In order for animation to work you have to set the animation-name in the HTML element  */
+    animation-name: moveInLeft;
+    /* This is how much you want the animation to last */
+    animation-duration: 5s;
+    /* How long the animation will take before starting */
+    animation-delay: 1s;
+    /* How many times you want the animation to happen */
+    animation-iteration-count: 1;
+    /* Choosing if the animation will begin faster and then slow down or vice-versa */
+    animation-timing-function: ease-out;
+    /* Makes the animation starts with the 0% animation style */
+    animation-fill-mode: backwards;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    /* THIS IS SHORTCUT TO PUT A FEW ANIMATIONI FUNCTION TOGUETHER */
+    animation: moveInRigth 5s ease-out;
+    /* How long the animation will take before starting */
+    animation-delay: 3s;
+    /* How many times you want the animation to happen */
+    animation-iteration-count: 1;
+    /* Makes the animation starts with the 0% animation style */
+    animation-fill-mode: backwards;
+  }
+}
