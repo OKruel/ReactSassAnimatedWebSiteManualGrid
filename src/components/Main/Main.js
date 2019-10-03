@@ -39,6 +39,10 @@ const Main = props => (
                 </div>
             </div>
         </section>
+
+        <section className='section-features'> 
+            <i className='icon-basic-world'></i>
+        </section>
     </main>
 )
 
