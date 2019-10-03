@@ -1,10 +1,21 @@
 //!Those are the colors for the linear-gradient used in the header
-$color-ligth-grey: rgba(255, 255, 255, 0.428);
-$color-dark-green: rgba(0, 128, 77, 0.639);
+
+$color-grey-light: rgba(255, 255, 255, 0.428);
+$color-green-dark: rgba(0, 128, 77, 0.639);
+
 //!Colors for the other elements
 $color-white: #fff;
 $color-medium-gray: #777;
 $color-black: black;
+
+$color-primary-green: rgb(0, 128, 11);
+
+
+$color-grey-light1: #f7f7f7;
+
+//! Font Sizes
+$default-font-size: 1.6rem;
+
 //!Variables for the Grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;

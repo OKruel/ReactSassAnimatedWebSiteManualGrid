@@ -1,9 +1,10 @@
 import React from 'react'
+import logoWhite from '../../assets/img/logo-white.png'
 
 const Header = props => (
     <header className='header'>
         <div className='header__logo-box'>
-            <img src='../../assets/img/logo-white.png' alt='Logo_Image' className='header__logo'></img>
+            <img src={logoWhite} alt='Logo_Image' className='header__logo'></img>
         </div>
 
         <div className='header__text-box'>
