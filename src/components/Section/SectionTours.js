@@ -21,7 +21,13 @@ const SectionTours = props => (
                             </span>                            
                         </h4>
                         <div className='card__details'>
-                            Details
+                            <ul>
+                                <li>3 day tour</li>
+                                <li>Up to 30 people</li>
+                                <li>2 tour guides</li>
+                                <li>Sleep in cozy hostels</li>
+                                <li>Difficulty: easy</li>
+                            </ul>
                         </div>
                     </div>
                     <div className='card__side card__side--back card__side--back-1'>
