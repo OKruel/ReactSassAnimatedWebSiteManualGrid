@@ -1,9 +1,11 @@
 import React from 'react';
 
-import Header from '../components/Header/Header'
-import Main from '../components/Main/Main'
-import SectionFeatures from './Section/SectionFeatures'
-import SectionTours from './Section/SectionTours'
+import Header from '../components/Header/Header';
+import Main from '../components/Main/Main';
+import SectionFeatures from './Section/SectionFeatures';
+import SectionTours from './Section/SectionTours';
+import SectionStories from './Section/SectionStories';
+import SectionBook from './Section/SectionBook';
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <Main></Main>
       <SectionFeatures></SectionFeatures>
       <SectionTours></SectionTours>
+      <SectionStories></SectionStories>
+      <SectionBook></SectionBook>
     </div>
   );
 }
