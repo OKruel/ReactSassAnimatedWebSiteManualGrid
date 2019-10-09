@@ -1,7 +1,7 @@
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  margin-bottom: 6rem;
+  margin-bottom: 13rem;
   /* This will make any element which id BEHIND to be hidden while the animation takes place */
   backface-visibility: hidden;
 
@@ -14,7 +14,7 @@
     /* In order for animation to work you have to set the animation-name in the HTML element  */
     animation-name: moveInLeft;
     /* This is how much you want the animation to last */
-    animation-duration: 5s;
+    animation-duration: 2s;
     /* How long the animation will take before starting */
     animation-delay: 1s;
     /* How many times you want the animation to happen */
@@ -31,9 +31,9 @@
     font-weight: 700;
     letter-spacing: 1.75rem;
     /* THIS IS SHORTCUT TO PUT A FEW ANIMATIONI FUNCTION TOGUETHER */
-    animation: moveInRigth 5s ease-out;
+    animation: moveInRigth 2s ease-out;
     /* How long the animation will take before starting */
-    animation-delay: 3s;
+    animation-delay: 1s;
     /* How many times you want the animation to happen */
     animation-iteration-count: 1;
     /* Makes the animation starts with the 0% animation style */

@@ -84,6 +84,7 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     &-1 {
+      font-weight: 700;
       background-image: linear-gradient(
         to right bottom,
         rgba($color-secondary-light, 0.85) rgba($color-secondary-dark, 0.85)

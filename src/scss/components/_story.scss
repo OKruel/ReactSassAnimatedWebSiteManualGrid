@@ -25,6 +25,7 @@
 
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+        overflow: hidden;
         backface-visibility: hidden;
     }
 
@@ -42,7 +43,7 @@
     &__caption {
         position: absolute;
         top: 43%;
-        left: 10%;
+        left: 6%;
         transform: translate(0%, 150%);
         color: $color-white;
         text-transform: uppercase;

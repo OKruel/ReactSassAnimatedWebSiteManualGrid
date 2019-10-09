@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SectionTours = props => (
-    <section className='section-tours'>
+    <section className='section-tours' id='section-tours'>
         <div className='u-center-text u-margin-bottom-small'>
             <h2 className='heading-secondary'>
                 Most popular tours
@@ -36,7 +36,7 @@ const SectionTours = props => (
                                 <p className='card__price-only'>Only</p>
                                 <p className='card__price-value'>$297</p>
                             </div>
-                            <a href='#' className='btn btn--white'>Book now</a>
+                            <a href='#popup' className='btn btn--white'>Book now</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ const SectionTours = props => (
                                 <p className='card__price-only'>Only</p>
                                 <p className='card__price-value'>$497</p>
                             </div>
-                            <a href='#' className='btn btn--white'>Book now</a>
+                            <a href='#popup' className='btn btn--white'>Book now</a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ const SectionTours = props => (
                                 <p className='card__price-only'>Only</p>
                                 <p className='card__price-value'>$897</p>
                             </div>
-                            <a href='#' className='btn btn--white'>Book now</a>
+                            <a href='#popup' className='btn btn--white'>Book now</a>
                         </div>
                     </div>
                 </div>

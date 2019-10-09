@@ -8,6 +8,7 @@ import SectionTours from './Section/SectionTours';
 import SectionStories from './Section/SectionStories';
 import SectionBook from './Section/SectionBook';
 import Footer from './Footer/Footer';
+import PopUp from './PopUp/PopUp';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <SectionStories></SectionStories>
       <SectionBook></SectionBook>
       <Footer></Footer>
+      <PopUp></PopUp>
     </div>
   );
 }

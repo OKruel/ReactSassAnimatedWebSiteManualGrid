@@ -3,7 +3,9 @@ import React from 'react';
 const Navigation = props => (
     <div className='navigation'>
         <input id='navi-toggle' type='checkbox' className='navigation__checkbox'/>
-        <label for='navi-toggle' className='navigation__button'>Menu</label>
+        <label for='navi-toggle' className='navigation__button'>
+            <span className='navigation__icon'>&nbsp;</span>
+        </label>
         
         <div className='navigation__background'>&nbsp;</div>
 
