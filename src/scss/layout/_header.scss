@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  height: 95%;
+  height: 100vh;
+  // padding: 0 3rem;
   background-image: linear-gradient(45deg, $color-grey-light, $color-green-dark), url(../../assets/img/hero.jpg);
   /* This will make the background-image to take the whole area of its parent element */
   background-size: cover;
@@ -11,6 +12,13 @@
   // clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
   /* This is set to the child elements to be relative to this element(which is the parent) */
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  
+  @include respond(tab-land) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 
   &__logo-box {
     position: absolute;

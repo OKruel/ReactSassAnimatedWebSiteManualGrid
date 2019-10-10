@@ -1,10 +1,26 @@
 html {
-  width: 100%;
-  height: 100%;
-  //This will make the ROOT size in order to use REM in ALL other sizes
-  //Makes the website responsive with all the sizes used in the website
-  //Defines what 1rem is
-  font-size: 62.5%;
+  //This will make the ROOT size in order to use REM in ALL other sizes;
+  //Makes the website responsive with all the sizes used in the website;
+  //Defines what 1rem is;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px(default browser font-size value) = 62.5%;
+  //Since the font-size values are the same we do not need this one
+  //Because the tab-port will also apply to the 600px;
+  //!@include respond(phone) {
+  // 1rem = 8px; 8px/16px(default browser font-size value) = 50%;
+  //!  font-size: 50%;
+  //!}
+  //Have to put the 1200 before due to the order which CSS reads the files. The LAST style applies
+  @include respond(tab-land) {
+    //TODO width > 1200?;
+    font-size: 56.25%; //TODO 1rem = 9px; 9px/16px(default browser font-size value) = 56.25%;
+  }
+  @include respond(tab-port) {
+    //TODO width > 900?;
+    font-size: 50%; //TODO 1rem = 8px; 8px/16px(default browser font-size value) = 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //TODO 1rem = 12px; 12px/16px(default browser font-size value) = 75%;
+  }
 }
 /* Select the elements and the state they are in to apply CSS */
 *,
@@ -16,28 +32,44 @@ html {
 }
 
 body {
-  background-color: white;
-  height: 100%;
-  width: 100%;
   margin: 0;
-  padding: 3rem;
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
   box-sizing: border-box;
+
+  // @include respond(tab-land) {
+  //   padding: 0;
+  // }
+  // @include respond(tab-port) {
+  //   font-size: 50%;
+  // }
+  // @include respond(big-desktop) {
+  //   font-size: 75%;
+  // }
 }
 
-#root {
-  width: 100%;
-  height: 100%;
-}
+// #root {
+// width: 100vw;
+// height: 100vh;
+// }
 
 .App {
-  background-color: $color-grey-light1;
-  // border: solid 2px purple;
-  width: 100%;
-  height: 100%;
+  background-color: $color-white;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
   // overflow: hidden;
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionTours = props => (
     <section className='section-tours' id='section-tours'>
-        <div className='u-center-text u-margin-bottom-small'>
+        <div className='u-center-text u-margin-bottom-medium'>
             <h2 className='heading-secondary'>
                 Most popular tours
             </h2>

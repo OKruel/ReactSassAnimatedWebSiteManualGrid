@@ -2,7 +2,6 @@ import React from 'react';
 
 const SectionBook = props => (
     <section className='section-book'>
-        <div className='row'>
             <div className='book'>
                 <div className='book__form'>
                     <form action='#' className='form'>
@@ -49,7 +48,6 @@ const SectionBook = props => (
                     </form>
                 </div>
             </div>
-        </div>
     </section>
 )
 

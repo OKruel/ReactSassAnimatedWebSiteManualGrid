@@ -6,7 +6,7 @@ import nat3 from '../../assets/img/nat-3-large.jpg';
 const Main = props => (
     <main>
         <section className='section-about'>
-            <div className='u-center-text u-margin-bottom-big'>
+            <div className='u-center-text u-margin-bottom-medium'>
                 <h2 className='heading-secondary'>
                     Exciting tours for adventurous people
                 </h2>
