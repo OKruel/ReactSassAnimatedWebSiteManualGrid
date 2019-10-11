@@ -22,6 +22,7 @@
     }
 
     &--back {
+
       transform: rotateY(180deg);
 
       &-1 {
@@ -85,10 +86,10 @@
     box-decoration-break: clone;
     &-1 {
       font-weight: 700;
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.85) rgba($color-secondary-dark, 0.85)
-      );
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba($color-secondary-light, 0.85) rgba($color-secondary-dark, 0.85)
+      // );
     }
   }
 
@@ -112,11 +113,10 @@
   }
 
   &__cta {
-    position: absolute;
+    margin: auto;
+    position: relative;
     text-align: center;
     top: 25%;
-    left: 25%;
-    transform: translateY(-50%, -50%);
   }
 
   &__price-box {
