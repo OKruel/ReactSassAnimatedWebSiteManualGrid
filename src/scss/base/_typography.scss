@@ -5,6 +5,10 @@
   /* This will make any element which id BEHIND to be hidden while the animation takes place */
   backface-visibility: hidden;
 
+  @include respond(big-desktop) {
+    margin-bottom: 8rem;
+  }
+
   &--main {
     /* The display set to block will take the intire width  */
     display: block;

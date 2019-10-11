@@ -1,10 +1,15 @@
 import React from 'react'
-import nat1 from '../../assets/img/nat-1-large.jpg';
-import nat2 from '../../assets/img/nat-2-large.jpg';
-import nat3 from '../../assets/img/nat-3-large.jpg';
+
+import natSmall1 from '../../assets/img/nat-1.jpg';
+import natSmall2 from '../../assets/img/nat-2.jpg';
+import natSmall3 from '../../assets/img/nat-3.jpg';
+
+import natLarge1 from '../../assets/img/nat-1-large.jpg';
+import natLarge2 from '../../assets/img/nat-2-large.jpg';
+import natLarge3 from '../../assets/img/nat-3-large.jpg';
 
 const Main = props => (
-    <main>
+    <main className='main'>
         <section className='section-about'>
             <div className='u-center-text u-margin-bottom-medium'>
                 <h2 className='heading-secondary'>
@@ -27,14 +32,31 @@ const Main = props => (
                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     </p>
 
-                    <a href='#' className='btn-text'>Learn More &rarr;</a> 
+                    <a href='#' className='btn-text'>Learn More &rarr;</a>
 
                 </div>
-                <div className='col-1-of-2'> 
+                <div className='col-1-of-2'>
                     <div className='composition'>
-                        <img src={nat1} alt='Nat 1' className='composition__photo composition__photo--p1'></img>
-                        <img src={nat2} alt='Nat 2' className='composition__photo composition__photo--p2'></img>
-                        <img src={nat3} alt='Nat 3' className='composition__photo composition__photo--p3'></img>
+
+                        <img srcSet={`${natSmall1} 300w, ${natLarge1} 1000w`}
+                            sizes='(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
+                            className='composition__photo composition__photo--p1'
+                            alt='Nat 1'
+                        ></img>
+                        <img srcSet={`${natSmall2} 300w, ${natLarge2} 1000w`}
+                            sizes='(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
+                            className='composition__photo composition__photo--p2'
+                            alt='Nat 2'
+                        ></img>
+                        <img srcSet={`${natSmall3} 300w, ${natLarge3} 1000w`}
+                            sizes='(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px' 
+                            className='composition__photo composition__photo--p3' 
+                            alt='Nat 3'
+                        ></img>
+
+                        {/* <img src={natLarge1} alt='Nat 1' className='composition__photo composition__photo--p1'></img>
+                        <img src={natLarge2} alt='Nat 2' className='composition__photo composition__photo--p2'></img>
+                        <img src={natLarge3} alt='Nat 3' className='composition__photo composition__photo--p3'></img> */}
                     </div>
                 </div>
             </div>

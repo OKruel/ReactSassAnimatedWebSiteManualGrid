@@ -39,29 +39,13 @@ body {
   line-height: 1.7;
   color: #777;
   box-sizing: border-box;
-
-  // @include respond(tab-land) {
-  //   padding: 0;
-  // }
-  // @include respond(tab-port) {
-  //   font-size: 50%;
-  // }
-  // @include respond(big-desktop) {
-  //   font-size: 75%;
-  // }
 }
-
-// #root {
-// width: 100vw;
-// height: 100vh;
-// }
 
 .App {
   background-color: $color-white;
   width: 100vw;
   height: 100vh;
   padding: 5rem;
-  // overflow: hidden;
 
   @include respond(tab-land) {
     padding: 0;
